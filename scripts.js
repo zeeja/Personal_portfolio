@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // Smooth scrolling for navigation menu
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -9,17 +8,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-=======
-// Smooth scrolling for navigation menu
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
+// Contact form validation
 document.getElementById('contact-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
@@ -61,6 +51,8 @@ document.getElementById('contact-form').addEventListener('submit', function (eve
         // Process the form submission, e.g., send an email or save to a database.
     }
 });
+
+// Mobile navigation toggle
 document.getElementById('nav-toggle').addEventListener('click', function() {
     const nav = document.getElementById('main-nav');
     if (nav.style.display === 'block') {
@@ -69,4 +61,3 @@ document.getElementById('nav-toggle').addEventListener('click', function() {
         nav.style.display = 'block';
     }
 });
->>>>>>> master
